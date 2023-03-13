@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thank You for Your Donation!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url(" https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-thank-you-for-your-thanksgiving-background-image_279103.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+      }
+      .overlay {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 50px 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      .invoice {
+        font-size: 16px;
+        margin-top: 50px;
+        text-align: left;
+      }
+      .invoice span {
+        display: inline-block;
+        width: 200px;
+        margin-bottom: 10px;
+      }
+      .invoice strong {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <script>
+      function showDateTime() {
+        var now = new Date();
+        var dateTime = now.toLocaleString();
+        document.getElementById('datetime').innerHTML = dateTime;
+      }
+    </script>
+  <body onload="showDateTime()">
+    <div class="overlay">
+      <h1>Thank You for Your Donation!</h1>
+      <p>Your generosity is greatly appreciated. Your donation will help us continue our mission to make a difference in the world.</p>
+      <div class="invoice">
+        <p><strong>Donation Invoice:</strong></p>
+        <span>Donation amount:</span><strong>$10.00</strong><br>
+        <span>Transaction ID:</span><strong>5723412894367890</strong><br>
+        <span>Donation Date:</span><strong> <span id="datetime"></span></strong> <br>
+        <span>Payment Method:</span><strong>paypal</strong><br>
+      </div>
+    </div>
+  </body>
+</html>

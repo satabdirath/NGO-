@@ -1,0 +1,86 @@
+body {
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6; /* Reduce the opacity of the slider images */
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider .slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  
+.jumbotron {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/188/038/small_2x/3d-realistic-style-megaphone-illustration-on-blue-banner-background-concept-of-join-us-job-vacancy-and-announcement-in-modern-flat-cartoon-style-design-vector.jpg");
+   
+    background-size: cover;
+    background-position: center center;
+    color: rgb(10, 0, 0);
+    text-align: center;
+    padding: 150px 0;
+}
+
+.donate-button {
+    background-color: #3cba54;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  
+  .donate-button a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+.btn-primary {
+    background-color: #008cba;
+    border-color: #008cba;
+}
+
+.btn-primary:hover {
+    background-color: #006080;
+    border-color: #006080;
+}
+
+.footer {
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #38027e;
+    text-align: center;
+}
+.footer {
+    background-image: url("https://siddharthpetro.com/wp-content/uploads/2019/09/insurance-footer-background.png");
+    background-size: cover;
+    background-position: center;
+    color: #f9fbfd;
+    padding: 50px 0;
+}
+
+    
+   
+    

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="payment.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+     <!-- Fontawesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-BdtIyHrWd8+ucyjPz9DkARZtI+o8PwhjwCok/hLO1yPyGSWSdRHX1cLgg5XoNSBZlq3ue5l5kjn+h1/XgKNC/A==" crossorigin="anonymous" />
+     
+    <!-- Custom CSS -->
+    <style>
+      /* Style for the header */
+      .header {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* Style for the slider */
+      .slider {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .slider img.active {
+        opacity: 0.9;
+      }
+      /* Style for the social media icons */
+      .social-icons {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .social-icons a {
+        color: #fff;
+        margin-left: 10px;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Minati foundation</h1>
+      
+        <div>
+          <a href="#" style="margin-left: 20px;"></a>
+          <a href="#" style="margin-right: 20px;">home</a>
+          <a href="#">About us</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </header>
+  
+
+
+    <div class="slider">
+       
+     <img src="https://images.outlookindia.com/public/uploads/articles/2020/4/21/Poor_child_(1).jpg" alt="Slider Image 1" class="active" />
+      <img src="https://i.pinimg.com/736x/e2/df/04/e2df04e1f7893fe91ac9f7eb237ca758--education-and-training-in-india.jpg" alt="Slider Image 2" />
+      <img src="https://pbs.twimg.com/media/CzST0b5UsAA4K6p.jpg" alt="Slider Image 3" />
+    </div><br><br>
+
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h2>About minati foundation</h2>
+        <p><em>minati foundation vision is to end hunger and promote education for children living in poverty. We believe that every child deserves access to nutritious food and quality education, regardless of their background or circumstances. Our goal is to provide daily meals to vulnerable children and ensure they receive the education and support they need to reach their full potential. We work closely with local communities to identify the most vulnerable children and provide sustainable solutions that address the root causes of hunger and lack of education. Our commitment to the long-term development of the children and communities we serve drives us to invest in their education, health, and overall well-being. At [NGO name], we believe that by empowering children with the tools they need to succeed, we can break the cycle of poverty and create a brighter future for All.</em></p>
+        </div>
+        <div class="col-md-6">
+        <h2>Make a Donation</h2>
+        <p>Your donation can help us make a difference in the lives of those we serve.</p>
+        <div class="donate-button">
+        <a href="#" onclick="openAnotherPage()">Donate</a>
+        </div>
+        </div>
+        </div>
+        </div>
+         <div class="container">
+            <!--<div class="row">  -->          
+            <h2>Our Mission</h2>
+            <p><b><em>Our mission is to Feeding Minds, Fighting Hunger: Empowering Children for a Brighter Future</b></em></p>
+            </div>
+            <div class="jumbotron">
+                <h1 class="display-4"><strong>join us</strong></h1>
+                
+                <br>
+                <p>Learn more about our organization and fill the to get involved</p>
+                <a class="btn btn-primary btn-lg" href="https://forms.gle/EQGEpx5sqk6xnG3i8" role="button">fill form</a>
+            </div>
+      
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // JavaScript for the slider
+      let images = document.querySelectorAll (".slider img");
+      let current = 0;
+      function slider() {
+    for (let i = 0; i < images.length; i++) {
+      images[i].classList.remove("active");
+    }
+    current++;
+    if (current === images.length) {
+      current = 0;
+    }
+    images[current].classList.add("active");
+  }
+
+  setInterval(slider, 3000);
+</script>
+<div>
+<footer class = "footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>About Us</h4>
+          <p>We are a team of passionate individuals who are dedicated to providing high-quality products and services to our customers.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Latest News</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">New Product Launch</a></li>
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Industry Insights</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-map-marker"></i> 123 Main Street, Anytown USA</li>
+            <li><i class="fa fa-phone"></i> (555) 555-1234</li>
+            <li><i class="fa fa-envelope"></i> info@mywebsite.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+          <p class="text-center">&copy; 2023 created by satabdi rath. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>
